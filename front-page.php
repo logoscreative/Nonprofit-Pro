@@ -27,7 +27,7 @@ function nonprofit_home_genesis_meta() {
 			remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 
 			//* Add home top widgets
-			add_action( 'genesis_after_header', 'nonprofit_home_top_widgets' );
+			add_action( 'genesis_before_loop', 'nonprofit_home_top_widgets' );
 
 		}
 

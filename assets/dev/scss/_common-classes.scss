@@ -26,7 +26,7 @@ Common Classes
 --------------------------------------------- */
 
 .breadcrumb {
-  background-color: #fafafa;
+  background-color: $light-accent;
   box-shadow: 3px 3px rgba(70, 70, 70, 0.05);
   font-size: 14px;
   margin-bottom: 0;
@@ -104,7 +104,7 @@ Common Classes
 }
 
 .entry-title a {
-  color: #34678a;
+  color: $menu-bg;
 }
 
 .entry-title a:hover {
@@ -119,12 +119,10 @@ Common Classes
 .after-entry .widget-title,
 .sidebar .widget-title a,
 .sidebar .widget-title {
-  border-bottom: 1px dotted #ddd;
+  border-bottom: 1px solid $medium-accent;
   color: $primary-color;
-  letter-spacing: 2px;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  text-transform: uppercase;
 }
 
 .footer-widgets .widget-title {

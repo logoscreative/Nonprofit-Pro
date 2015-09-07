@@ -77,21 +77,9 @@ add_action( 'genesis_before_header', 'genesis_do_nav' );
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_footer', 'genesis_do_subnav', 7 );
 
-//* Reduce the secondary navigation menu to one level depth
-add_filter( 'wp_nav_menu_args', 'nonprofit_secondary_menu_args' );
-function nonprofit_secondary_menu_args( $args ){
-
-	if( 'secondary' != $args['theme_location'] )
-	return $args;
-
-	$args['depth'] = 1;
-	return $args;
-
-}
-
-//* Reposition the entry meta in the entry header
-remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
-add_action( 'genesis_entry_header', 'genesis_post_info', 5 );
+//* Reposition the sidebar
+//remove_action( 'genesis_after_content', 'genesis_get_sidebar' );
+//add_action( 'genesis_after_header', 'genesis_get_sidebar' );
 
 //* Customize the entry meta in the entry header
 add_filter( 'genesis_post_info', 'nonprofit_post_info_filter' );

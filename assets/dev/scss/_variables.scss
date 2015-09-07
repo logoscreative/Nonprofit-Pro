@@ -1,8 +1,15 @@
 // Main colors
-$primary-color: #e44a3c;
+//$primary-color: #e44a3c;
+$primary-color: #181510;
 $secondary-color: #3f71c3;
 $tertiary-color: #344a66;
 $accent: #a8b2b9;
+$medium-accent: lighten($accent, 10%);
+$light-accent: lighten($accent, 25%);
+//$menu-bg: #34678a;
+$menu-bg: #181510;
+//$menu-bg-hover: #78a7c8;
+$menu-bg-hover: lighten($menu-bg, 5%);
 
 // Blue colors
 $primary-color-blue: #3d78c1;

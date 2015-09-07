@@ -8,16 +8,15 @@ Sidebars
 
 .after-entry li,
 .sidebar li {
-  border-bottom: 1px dotted #ddd;
+  border-bottom: 1px dotted $medium-accent;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
 
 .after-entry .widget,
 .sidebar .widget {
-  background-color: #fff;
-  border-left: 3px solid $primary-color;
-  box-shadow: 3px 3px rgba(70, 70, 70, 0.05);
+  background-color: $light-accent;
+  border-left: 5px solid $primary-color;
   padding: 40px;
 }
 

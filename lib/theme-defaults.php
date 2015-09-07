@@ -1,6 +1,6 @@
 <?php
 
-//* Education Theme Setting Defaults
+//* Nonprofit Theme Setting Defaults
 add_filter( 'genesis_theme_settings_defaults', 'nonprofit_theme_defaults' );
 function nonprofit_theme_defaults( $defaults ) {
 
@@ -16,7 +16,7 @@ function nonprofit_theme_defaults( $defaults ) {
 
 }
 
-//* Education Theme Setup
+//* Nonprofit Theme Setup
 add_action( 'after_switch_theme', 'nonprofit_theme_setting_defaults' );
 function nonprofit_theme_setting_defaults() {
 

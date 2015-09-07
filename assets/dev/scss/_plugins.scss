@@ -11,7 +11,7 @@ Plugins
 }
 
 .widget-area .widget.enews-widget {
-  background-color: #78a7c8;
+  background-color: $menu-bg-hover;
   border: none;
   padding: 40px;
 }
@@ -29,7 +29,7 @@ Plugins
 }
 
 .enews-widget .enews input:hover[type="submit"] {
-  background-color: #34678a;
+  background-color: $menu-bg;
   color: #fff;
 }
 
@@ -94,7 +94,7 @@ html > body.nonprofit-pro-home .slide-excerpt-border {
 }
 
 .nonprofit-pro-home .slide-excerpt h2 a {
-  color: #78a7c8;
+  color: $menu-bg-hover;
 }
 
 .nonprofit-pro-home #genesis-responsive-slider .slide-excerpt h2 a:hover {

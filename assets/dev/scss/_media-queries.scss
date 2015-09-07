@@ -302,9 +302,14 @@ Media Queries
     padding-bottom: 16px;
   }
 
+  .nav-primary .genesis-nav-menu {
+    background-color: transparent;
+    float: none;
+  }
+
   .nav-primary .genesis-nav-menu.responsive-menu li a {
     background: none;
-    color: #fff;
+    color: $primary-color;
   }
 
   .nav-primary .genesis-nav-menu.responsive-menu li a:hover {
@@ -403,10 +408,6 @@ Media Queries
   .home-bottom .enews-widget input[type="email"] {
     margin-bottom: 16px;
     text-align: center;
-  }
-
-  .title-area {
-    max-width: 300px;
   }
 
 }

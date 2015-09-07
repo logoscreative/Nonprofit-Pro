@@ -4,7 +4,6 @@ Site Header
 
 .site-header {
   background-color: #fff;
-  border-top: 3px solid $primary-color;
   box-shadow: 0 3px rgba(70, 70, 70, 0.05);
   min-height: 80px;
 }
@@ -20,14 +19,10 @@ Site Header
 --------------------------------------------- */
 
 .title-area {
-  background-color: $primary-color;
-  box-shadow: 0 3px rgba(70, 70, 70, 0.1);
-  color: #fff;
   margin: 0 auto;
   padding: 20px;
-  position: absolute;
+  float: left;
   text-align: center;
-  width: 300px;
 }
 
 .header-image .title-area {
@@ -44,7 +39,7 @@ Site Header
 
 .site-header .site-title a,
 .site-header .site-title a:hover {
-  color: #fff;
+  color: $menu-bg-hover;
 }
 
 .header-image .site-title > a {

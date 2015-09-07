@@ -3,7 +3,7 @@ Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-  background-color: #34678a;
+  background-color: $menu-bg;
   font-size: 16px;
   padding: 60px 0;
   text-align: center;
@@ -16,7 +16,7 @@ Site Footer
 
 .site-footer a.button,
 .site-footer .wrap a:hover {
-  color: #78a7c8;
+  color: $menu-bg-hover;
 }
 
 .site-footer p {
