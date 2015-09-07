@@ -1,0 +1,26 @@
+/*
+Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar {
+  font-size: 16px;
+}
+
+.after-entry li,
+.sidebar li {
+  border-bottom: 1px dotted #ddd;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.after-entry .widget,
+.sidebar .widget {
+  background-color: #fff;
+  border-left: 3px solid $primary-color;
+  box-shadow: 3px 3px rgba(70, 70, 70, 0.05);
+  padding: 40px;
+}
+
+.sidebar .widget:last-of-type {
+  margin-bottom: 40px;
+}

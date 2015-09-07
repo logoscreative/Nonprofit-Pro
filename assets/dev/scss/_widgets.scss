@@ -1,0 +1,83 @@
+/*
+Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.widget {
+  margin-bottom: 40px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.widget p:last-child,
+.widget ul > li:last-child,
+.widget-area .widget:last-of-type {
+  margin-bottom: 0;
+}
+
+.widget ol > li {
+  list-style-position: inside;
+  list-style-type: decimal;
+  padding-left: 20px;
+  text-indent: -20px;
+}
+
+.widget li li {
+  border: none;
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+
+.widget_calendar table {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.widget_calendar td,
+.widget_calendar th {
+  text-align: center;
+}
+
+/* Featured Content
+--------------------------------------------- */
+
+.featured-content .entry,
+.widget .entry {
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 10px;
+  padding: 0 0 10px;
+}
+
+.featured-content .entry-title {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.content .featured-content .entry-header .entry-meta {
+  text-align: left;
+  margin: 0 0 10px;
+}
+
+.content .featured-content .entry-header .entry-meta .entry-time {
+  background: none;
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+.after-entry .featured-content .entry,
+.sidebar .featured-content .entry {
+  border-bottom: 1px dotted #ddd;
+}
+
+.after-entry .featuredpage .entry,
+.sidebar .featuredpage .entry {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featured-content ul + .more-from-category {
+  margin-top: 10px;
+}

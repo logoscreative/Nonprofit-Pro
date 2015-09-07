@@ -1,0 +1,80 @@
+/*
+Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+  background-color: #fff;
+  border-top: 3px solid $primary-color;
+  box-shadow: 0 3px rgba(70, 70, 70, 0.05);
+  min-height: 80px;
+}
+
+.nonprofit-pro-home .site-header {
+  position: relative;
+  top: auto !important;
+  width: 100%;
+  z-index: 499;
+}
+
+/* Title Area
+--------------------------------------------- */
+
+.title-area {
+  background-color: $primary-color;
+  box-shadow: 0 3px rgba(70, 70, 70, 0.1);
+  color: #fff;
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  width: 300px;
+}
+
+.header-image .title-area {
+  background-color: #fff !important;
+  padding: 0;
+}
+
+.site-title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.site-header .site-title a,
+.site-header .site-title a:hover {
+  color: #fff;
+}
+
+.header-image .site-title > a {
+  float: left;
+  min-height: 100px;
+  width: 100%;
+}
+
+.site-description {
+  backface-visibility: hidden;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.site-description,
+.site-title {
+  margin-bottom: 0;
+}
+
+.header-image .site-description,
+.header-image .site-title {
+  display: block;
+  text-indent: -9999px;
+}
+
+/* Widget Area
+--------------------------------------------- */
+
+.site-header .widget-area {
+  float: right;
+  text-align: right;
+  width: 740px;
+}

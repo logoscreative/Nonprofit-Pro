@@ -1,0 +1,195 @@
+/*
+Common Classes
+---------------------------------------------------------------------------------------------------- */
+
+/* Avatar
+--------------------------------------------- */
+
+.avatar {
+  float: left;
+}
+
+.alignleft .avatar,
+.author-box .avatar {
+  margin-right: 24px;
+}
+
+.alignright .avatar {
+  margin-left: 24px;
+}
+
+.comment .avatar {
+  margin: 0 16px 24px 0;
+}
+
+/* Genesis
+--------------------------------------------- */
+
+.breadcrumb {
+  background-color: #fafafa;
+  box-shadow: 3px 3px rgba(70, 70, 70, 0.05);
+  font-size: 14px;
+  margin-bottom: 0;
+  padding: 15px 40px;
+}
+
+.archive-description,
+.author-box {
+  background-color: $primary-color;
+  box-shadow: 3px 3px rgba(70, 70, 70, 0.05);
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 40px;
+  padding: 40px;
+}
+
+.author-box-title {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.archive-description p a,
+.author-box .author-box-content a {
+  color: #fff;
+}
+
+.archive-description p a:hover,
+.author-box .author-box-content a:hover {
+  color: #444;
+}
+
+.archive-description p:last-child,
+.author-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* Search Form
+--------------------------------------------- */
+
+.search-form {
+  overflow: hidden;
+}
+
+.site-header .search-form {
+  float: right;
+  margin-top: 12px;
+}
+
+.entry-content .search-form,
+.site-header .search-form {
+  width: 50%;
+}
+
+.genesis-nav-menu .search input[type="submit"],
+.widget_search input[type="submit"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Titles
+--------------------------------------------- */
+
+.archive-title {
+  font-size: 20px;
+}
+
+.entry-title {
+  font-size: 30px;
+}
+
+.entry-title a {
+  color: #34678a;
+}
+
+.entry-title a:hover {
+  color: $primary-color;
+}
+
+.widget-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.after-entry .widget-title,
+.sidebar .widget-title a,
+.sidebar .widget-title {
+  border-bottom: 1px dotted #ddd;
+  color: $primary-color;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-widgets .widget-title {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* WordPress
+--------------------------------------------- */
+
+.alignleft {
+  float: left;
+  text-align: left;
+}
+
+.alignright {
+  float: right;
+  text-align: right;
+}
+
+a.alignleft,
+a.alignnone,
+a.alignright {
+  max-width: 100%;
+}
+
+a.alignnone {
+  display: inline-block;
+}
+
+a.aligncenter img {
+  display: block;
+  margin: 0 auto;
+}
+
+img.centered,
+.aligncenter {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+img.alignnone,
+.alignnone {
+  margin-bottom: 12px;
+}
+
+a.alignleft,
+img.alignleft,
+.wp-caption.alignleft {
+  margin: 0 24px 12px 0;
+}
+
+a.alignright,
+img.alignright,
+.wp-caption.alignright {
+  margin: 0 0 12px 24px;
+}
+
+.wp-caption-text {
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.entry-content p.wp-caption-text {
+  margin-bottom: 0;
+}

@@ -1,0 +1,119 @@
+/*
+Plugins
+---------------------------------------------------------------------------------------------------- */
+
+/* Genesis eNews Extended
+--------------------------------------------- */
+
+.enews-widget,
+.widget-area .widget.enews-widget .widget-title {
+  color: #fff;
+}
+
+.widget-area .widget.enews-widget {
+  background-color: #78a7c8;
+  border: none;
+  padding: 40px;
+}
+
+.enews-widget input {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.enews-widget .enews input[type="submit"] {
+  background-color: #fff;
+  color: #444;
+  margin: 0;
+  width: 100%;
+}
+
+.enews-widget .enews input:hover[type="submit"] {
+  background-color: #34678a;
+  color: #fff;
+}
+
+.enews form + p {
+  margin-top: 24px;
+}
+
+.home-bottom .widget.enews-widget {
+  clear: both;
+  overflow: hidden;
+  padding: 0;
+}
+
+.home-bottom .enews p {
+  float: left;
+  margin-bottom: 0;
+  width: 31.623931623931625%;
+}
+
+.home-bottom .enews p + form {
+  float: right;
+  width: 65.81196581196582%;
+}
+
+.home-bottom .enews-widget input[type="email"] {
+  float: left;
+  margin-bottom: 0;
+  width: 65.81196581196582%;
+}
+
+.home-bottom .enews-widget input[type="submit"] {
+  float: right;
+  width: 31.623931623931625%;
+}
+
+.home-bottom .enews input {
+  border: none;
+}
+
+/* Genesis Responsive Slider
+--------------------------------------------- */
+
+.nonprofit-pro-home #genesis-responsive-slider {
+  border: none;
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0;
+}
+
+.nonprofit-pro-home .slide-excerpt {
+  background-color: #fff;
+  box-shadow: 3px 3px rgba(70, 70, 70, 0.2);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+html > body.nonprofit-pro-home .slide-excerpt-border {
+  border: none;
+  margin: 0;
+  padding: 40px 40px 12px;
+  width: 100%;
+}
+
+.nonprofit-pro-home .slide-excerpt h2 a {
+  color: #78a7c8;
+}
+
+.nonprofit-pro-home #genesis-responsive-slider .slide-excerpt h2 a:hover {
+  color: #444;
+}
+
+.nonprofit-pro-home #genesis-responsive-slider .flex-control-nav {
+  margin-top: -40px;
+  text-align: left;
+}
+
+.nonprofit-pro-home #genesis-responsive-slider .flex-control-nav li {
+  padding-left: 5px;
+  text-indent: 0;
+}
+
+/* Jetpack
+--------------------------------------------- */
+
+#wpstats {
+  display: none;
+}

@@ -1,0 +1,362 @@
+/*
+Theme Colors
+---------------------------------------------------------------------------------------------------- */
+
+.nonprofit-pro-blue .nav-secondary .genesis-nav-menu li.current-menu-item > a,
+.nonprofit-pro-green .nav-secondary .genesis-nav-menu li.current-menu-item > a,
+.nonprofit-pro-purple .nav-secondary .genesis-nav-menu li.current-menu-item > a,
+.nonprofit-pro-red .nav-secondary .genesis-nav-menu li.current-menu-item > a {
+  background: none;
+}
+
+/* Nonprofit Pro Blue
+--------------------------------------------- */
+
+.nonprofit-pro-blue .after-entry .widget-title,
+.nonprofit-pro-blue .archive-pagination .active a,
+.nonprofit-pro-blue .archive-pagination li a:hover,
+.nonprofit-pro-blue .comment-reply-link,
+.nonprofit-pro-blue .comment-respond h3,
+.nonprofit-pro-blue .entry-comments h3,
+.nonprofit-pro-blue .entry-footer .entry-meta a:hover,
+.nonprofit-pro-blue .entry-pings h3,
+.nonprofit-pro-blue .entry-title a:hover,
+.nonprofit-pro-blue .home-featured .more-link,
+.nonprofit-pro-blue .home-top .widget_text .widget-title,
+.nonprofit-pro-blue .sidebar .widget-title a,
+.nonprofit-pro-blue .sidebar .widget-title {
+  color: $primary-color-blue;
+}
+
+.nonprofit-pro-blue .archive-description,
+.nonprofit-pro-blue .author-box,
+.nonprofit-pro-blue .button:hover,
+.nonprofit-pro-blue .content .entry-header .entry-meta .entry-time,
+.nonprofit-pro-blue .footer-widgets .wrap .button:hover,
+.nonprofit-pro-blue .footer-widgets button:hover,
+.nonprofit-pro-blue .footer-widgets input:hover[type="button"],
+.nonprofit-pro-blue .footer-widgets input:hover[type="reset"],
+.nonprofit-pro-blue .footer-widgets input:hover[type="submit"],
+.nonprofit-pro-blue .home-bottom .widget .button:hover,
+.nonprofit-pro-blue .home-bottom button:hover,
+.nonprofit-pro-blue .home-bottom input:hover[type="button"],
+.nonprofit-pro-blue .home-bottom input:hover[type="reset"],
+.nonprofit-pro-blue .home-bottom input:hover[type="submit"],
+.nonprofit-pro-blue .home-featured #genesis-responsive-slider .more-link:hover,
+.nonprofit-pro-blue .title-area,
+.nonprofit-pro-blue button:hover,
+.nonprofit-pro-blue input:hover[type="button"],
+.nonprofit-pro-blue input:hover[type="reset"],
+.nonprofit-pro-blue input:hover[type="submit"] {
+  background-color: $primary-color-blue;
+}
+
+.nonprofit-pro-blue .after-entry .widget,
+.nonprofit-pro-blue .home-top .wrap,
+.nonprofit-pro-blue .sidebar .widget,
+.nonprofit-pro-blue .site-header {
+  border-color: $secondary-color;
+}
+
+.nonprofit-pro-blue .footer-widgets .wrap a:hover,
+.nonprofit-pro-blue .footer-widgets a.button,
+.nonprofit-pro-blue .slide-excerpt h2 a,
+.nonprofit-pro-blue .home-middle .entry-title a,
+.nonprofit-pro-blue .home-top .widget_text,
+.nonprofit-pro-blue .site-footer .wrap a:hover,
+.nonprofit-pro-blue .site-footer a.button,
+.nonprofit-pro-blue a {
+  color: $accent;
+}
+
+.nonprofit-pro-blue .button,
+.nonprofit-pro-blue .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+.nonprofit-pro-blue .genesis-nav-menu .sub-menu a,
+.nonprofit-pro-blue .genesis-nav-menu li a:hover,
+.nonprofit-pro-blue .genesis-nav-menu li.current-menu-item > a,
+.nonprofit-pro-blue .home-bottom,
+.nonprofit-pro-blue .widget-area .widget.enews-widget,
+.nonprofit-pro-blue button,
+.nonprofit-pro-blue input[type="button"],
+.nonprofit-pro-blue input[type="reset"],
+.nonprofit-pro-blue input[type="submit"] {
+  background-color: $accent;
+}
+
+.nonprofit-pro-blue .entry-title a,
+.nonprofit-pro-blue .home-bottom a:hover,
+.nonprofit-pro-blue a:hover {
+  color: $tertiary-color;
+}
+
+.nonprofit-pro-blue .enews-widget .enews input:hover[type="submit"],
+.nonprofit-pro-blue .footer-widgets,
+.nonprofit-pro-blue .home-middle,
+.nonprofit-pro-blue .nav-primary,
+.nonprofit-pro-blue .site-footer {
+  background-color: $tertiary-color;
+}
+
+/* Nonprofit Pro Green
+--------------------------------------------- */
+
+.nonprofit-pro-green .after-entry .widget-title,
+.nonprofit-pro-green .archive-pagination .active a,
+.nonprofit-pro-green .archive-pagination li a:hover,
+.nonprofit-pro-green .comment-reply-link,
+.nonprofit-pro-green .comment-respond h3,
+.nonprofit-pro-green .entry-comments h3,
+.nonprofit-pro-green .entry-footer .entry-meta a:hover,
+.nonprofit-pro-green .entry-pings h3,
+.nonprofit-pro-green .entry-title a:hover,
+.nonprofit-pro-green .home-featured .more-link,
+.nonprofit-pro-green .home-top .widget_text .widget-title,
+.nonprofit-pro-green .sidebar .widget-title a,
+.nonprofit-pro-green .sidebar .widget-title {
+  color: $accent-green;
+}
+
+.nonprofit-pro-green .archive-description,
+.nonprofit-pro-green .author-box,
+.nonprofit-pro-green .button:hover,
+.nonprofit-pro-green .content .entry-header .entry-meta .entry-time,
+.nonprofit-pro-green .footer-widgets .wrap .button:hover,
+.nonprofit-pro-green .footer-widgets button:hover,
+.nonprofit-pro-green .footer-widgets input:hover[type="button"],
+.nonprofit-pro-green .footer-widgets input:hover[type="reset"],
+.nonprofit-pro-green .footer-widgets input:hover[type="submit"],
+.nonprofit-pro-green .home-bottom .widget .button:hover,
+.nonprofit-pro-green .home-bottom button:hover,
+.nonprofit-pro-green .home-bottom input:hover[type="button"],
+.nonprofit-pro-green .home-bottom input:hover[type="reset"],
+.nonprofit-pro-green .home-bottom input:hover[type="submit"],
+.nonprofit-pro-green .home-featured #genesis-responsive-slider .more-link:hover,
+.nonprofit-pro-green .title-area,
+.nonprofit-pro-green button:hover,
+.nonprofit-pro-green input:hover[type="button"],
+.nonprofit-pro-green input:hover[type="reset"],
+.nonprofit-pro-green input:hover[type="submit"] {
+  background-color: $accent-green;
+}
+
+.nonprofit-pro-green .after-entry .widget,
+.nonprofit-pro-green .home-top .wrap,
+.nonprofit-pro-green .sidebar .widget,
+.nonprofit-pro-green .site-header {
+  border-color: $accent-green;
+}
+
+.nonprofit-pro-green .footer-widgets .wrap a:hover,
+.nonprofit-pro-green .footer-widgets a.button,
+.nonprofit-pro-green .slide-excerpt h2 a,
+.nonprofit-pro-green .home-middle .entry-title a,
+.nonprofit-pro-green .home-top .widget_text,
+.nonprofit-pro-green .site-footer .wrap a:hover,
+.nonprofit-pro-green .site-footer a.button,
+.nonprofit-pro-green a {
+  color: $secondary-color-green;
+}
+
+.nonprofit-pro-green .button,
+.nonprofit-pro-green .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+.nonprofit-pro-green .genesis-nav-menu .sub-menu a,
+.nonprofit-pro-green .genesis-nav-menu li a:hover,
+.nonprofit-pro-green .genesis-nav-menu li.current-menu-item > a,
+.nonprofit-pro-green .home-bottom,
+.nonprofit-pro-green .widget-area .widget.enews-widget,
+.nonprofit-pro-green button,
+.nonprofit-pro-green input[type="button"],
+.nonprofit-pro-green input[type="reset"],
+.nonprofit-pro-green input[type="submit"] {
+  background-color: $secondary-color-green;
+}
+
+.nonprofit-pro-green .entry-title a,
+.nonprofit-pro-green .home-bottom a:hover,
+.nonprofit-pro-green a:hover {
+  color: $primary-color-green;
+}
+
+.nonprofit-pro-green .enews-widget .enews input:hover[type="submit"],
+.nonprofit-pro-green .footer-widgets,
+.nonprofit-pro-green .home-middle,
+.nonprofit-pro-green .nav-primary,
+.nonprofit-pro-green .site-footer {
+  background-color: $primary-color-green;
+}
+
+/* Nonprofit Pro Purple
+--------------------------------------------- */
+
+.nonprofit-pro-purple .after-entry .widget-title,
+.nonprofit-pro-purple .archive-pagination .active a,
+.nonprofit-pro-purple .archive-pagination li a:hover,
+.nonprofit-pro-purple .comment-reply-link,
+.nonprofit-pro-purple .comment-respond h3,
+.nonprofit-pro-purple .entry-comments h3,
+.nonprofit-pro-purple .entry-footer .entry-meta a:hover,
+.nonprofit-pro-purple .entry-pings h3,
+.nonprofit-pro-purple .entry-title a:hover,
+.nonprofit-pro-purple .home-featured .more-link,
+.nonprofit-pro-purple .home-top .widget_text .widget-title,
+.nonprofit-pro-purple .sidebar .widget-title a,
+.nonprofit-pro-purple .sidebar .widget-title {
+  color: $primary-color-purple;
+}
+
+.nonprofit-pro-purple .archive-description,
+.nonprofit-pro-purple .author-box,
+.nonprofit-pro-purple .button:hover,
+.nonprofit-pro-purple .content .entry-header .entry-meta .entry-time,
+.nonprofit-pro-purple .footer-widgets .wrap .button:hover,
+.nonprofit-pro-purple .footer-widgets button:hover,
+.nonprofit-pro-purple .footer-widgets input:hover[type="button"],
+.nonprofit-pro-purple .footer-widgets input:hover[type="reset"],
+.nonprofit-pro-purple .footer-widgets input:hover[type="submit"],
+.nonprofit-pro-purple .home-bottom .widget .button:hover,
+.nonprofit-pro-purple .home-bottom button:hover,
+.nonprofit-pro-purple .home-bottom input:hover[type="button"],
+.nonprofit-pro-purple .home-bottom input:hover[type="reset"],
+.nonprofit-pro-purple .home-bottom input:hover[type="submit"],
+.nonprofit-pro-purple .home-featured #genesis-responsive-slider .more-link:hover,
+.nonprofit-pro-purple .title-area,
+.nonprofit-pro-purple button:hover,
+.nonprofit-pro-purple input:hover[type="button"],
+.nonprofit-pro-purple input:hover[type="reset"],
+.nonprofit-pro-purple input:hover[type="submit"] {
+  background-color: $primary-color-purple;
+}
+
+.nonprofit-pro-purple .after-entry .widget,
+.nonprofit-pro-purple .home-top .wrap,
+.nonprofit-pro-purple .sidebar .widget,
+.nonprofit-pro-purple .site-header {
+  border-color: $primary-color-purple;
+}
+
+.nonprofit-pro-purple .footer-widgets .wrap a:hover,
+.nonprofit-pro-purple .footer-widgets a.button,
+.nonprofit-pro-purple .slide-excerpt h2 a,
+.nonprofit-pro-purple .home-middle .entry-title a,
+.nonprofit-pro-purple .home-top .widget_text,
+.nonprofit-pro-purple .site-footer .wrap a:hover,
+.nonprofit-pro-purple .site-footer a.button,
+.nonprofit-pro-purple a {
+  color: $accent-purple;
+}
+
+.nonprofit-pro-purple .button,
+.nonprofit-pro-purple .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+.nonprofit-pro-purple .genesis-nav-menu .sub-menu a,
+.nonprofit-pro-purple .genesis-nav-menu li a:hover,
+.nonprofit-pro-purple .genesis-nav-menu li.current-menu-item > a,
+.nonprofit-pro-purple .home-bottom,
+.nonprofit-pro-purple .widget-area .widget.enews-widget,
+.nonprofit-pro-purple button,
+.nonprofit-pro-purple input[type="button"],
+.nonprofit-pro-purple input[type="reset"],
+.nonprofit-pro-purple input[type="submit"] {
+  background-color: $accent-purple;
+}
+
+.nonprofit-pro-purple .entry-title a,
+.nonprofit-pro-purple .home-bottom a:hover,
+.nonprofit-pro-purple a:hover {
+  color: $tertiary-color-purple;
+}
+
+.nonprofit-pro-purple .enews-widget .enews input:hover[type="submit"],
+.nonprofit-pro-purple .footer-widgets,
+.nonprofit-pro-purple .home-middle,
+.nonprofit-pro-purple .nav-primary,
+.nonprofit-pro-purple .site-footer {
+  background-color: $tertiary-color-purple;
+}
+
+/* Nonprofit Pro Red
+--------------------------------------------- */
+
+.nonprofit-pro-red .after-entry .widget-title,
+.nonprofit-pro-red .archive-pagination .active a,
+.nonprofit-pro-red .archive-pagination li a:hover,
+.nonprofit-pro-red .comment-reply-link,
+.nonprofit-pro-red .comment-respond h3,
+.nonprofit-pro-red .entry-comments h3,
+.nonprofit-pro-red .entry-footer .entry-meta a:hover,
+.nonprofit-pro-red .entry-pings h3,
+.nonprofit-pro-red .entry-title a:hover,
+.nonprofit-pro-red .home-featured .more-link,
+.nonprofit-pro-red .home-top .widget_text .widget-title,
+.nonprofit-pro-red .sidebar .widget-title a,
+.nonprofit-pro-red .sidebar .widget-title {
+  color: $primary-color-red;
+}
+
+.nonprofit-pro-red .archive-description,
+.nonprofit-pro-red .author-box,
+.nonprofit-pro-red .button:hover,
+.nonprofit-pro-red .content .entry-header .entry-meta .entry-time,
+.nonprofit-pro-red .footer-widgets .wrap .button:hover,
+.nonprofit-pro-red .footer-widgets button:hover,
+.nonprofit-pro-red .footer-widgets input:hover[type="button"],
+.nonprofit-pro-red .footer-widgets input:hover[type="reset"],
+.nonprofit-pro-red .footer-widgets input:hover[type="submit"],
+.nonprofit-pro-red .home-bottom .widget .button:hover,
+.nonprofit-pro-red .home-bottom button:hover,
+.nonprofit-pro-red .home-bottom input:hover[type="button"],
+.nonprofit-pro-red .home-bottom input:hover[type="reset"],
+.nonprofit-pro-red .home-bottom input:hover[type="submit"],
+.nonprofit-pro-red .home-featured #genesis-responsive-slider .more-link:hover,
+.nonprofit-pro-red .title-area,
+.nonprofit-pro-red button:hover,
+.nonprofit-pro-red input:hover[type="button"],
+.nonprofit-pro-red input:hover[type="reset"],
+.nonprofit-pro-red input:hover[type="submit"] {
+  background-color: $primary-color-red;
+}
+
+.nonprofit-pro-red .after-entry .widget,
+.nonprofit-pro-red .home-top .wrap,
+.nonprofit-pro-red .sidebar .widget,
+.nonprofit-pro-red .site-header {
+  border-color: $primary-color-red;
+}
+
+.nonprofit-pro-red .footer-widgets .wrap a:hover,
+.nonprofit-pro-red .footer-widgets a.button,
+.nonprofit-pro-red .slide-excerpt h2 a,
+.nonprofit-pro-red .home-middle .entry-title a,
+.nonprofit-pro-red .home-top .widget_text,
+.nonprofit-pro-red .site-footer .wrap a:hover,
+.nonprofit-pro-red .site-footer a.button,
+.nonprofit-pro-red a {
+  color: $accent-red;
+}
+
+.nonprofit-pro-red .button,
+.nonprofit-pro-red .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+.nonprofit-pro-red .genesis-nav-menu .sub-menu a,
+.nonprofit-pro-red .genesis-nav-menu li a:hover,
+.nonprofit-pro-red .genesis-nav-menu li.current-menu-item > a,
+.nonprofit-pro-red .home-bottom,
+.nonprofit-pro-red .widget-area .widget.enews-widget,
+.nonprofit-pro-red button,
+.nonprofit-pro-red input[type="button"],
+.nonprofit-pro-red input[type="reset"],
+.nonprofit-pro-red input[type="submit"] {
+  background-color: $accent-red;
+}
+
+.nonprofit-pro-red .entry-title a,
+.nonprofit-pro-red .home-bottom a:hover,
+.nonprofit-pro-red a:hover {
+  color: $tertiary-color-red;
+}
+
+.nonprofit-pro-red .enews-widget .enews input:hover[type="submit"],
+.nonprofit-pro-red .footer-widgets,
+.nonprofit-pro-red .home-middle,
+.nonprofit-pro-red .nav-primary,
+.nonprofit-pro-red .site-footer {
+  background-color: $tertiary-color-red;
+}
