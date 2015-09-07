@@ -5,7 +5,7 @@ INSTALL
 1. Upload the Nonprofit Pro theme folder via FTP to your wp-content/themes/ directory. (The Genesis parent theme needs to be in the wp-content/themes/ directory as well.)
 2. Go to your WordPress dashboard and select Appearance.
 3. Activate the Nonprofit Pro theme.
-4. Inside your WordPress dashboard, go to Genesis > Theme Settings and configure them to your liking. To set up the theme like the demo, please visit http://my.studiopress.com/setup/nonprofit-theme/.
+4. Inside your WordPress dashboard, go to Genesis > Theme Settings and configure them to your liking. To set up the theme like the demo, please visit http://logoscreative.co/nonprofit-pro.
 
 WIDGET AREAS
 Header Right - This is the widgeted area that appears at the top right of the header. If it is active then Genesis style will follow the Partial Header style otherwise it will follow the Full Image Header Style, if image header is selected.
@@ -32,4 +32,4 @@ LOCALIZATION
 The Nonprofit Pro theme is translation ready.  More information about the translation process can be found here:http://codex.wordpress.org/Translating_WordPress/
 
 SUPPORT
-Please visit http://my.studiopress.com/help/ for theme support.
+Please visit http://logoscreative.co/nonprofit-pro for theme support.
