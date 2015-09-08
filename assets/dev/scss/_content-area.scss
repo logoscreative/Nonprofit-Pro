@@ -138,7 +138,7 @@ Content Area
 .entry {
   background-color: #fff;
   margin-bottom: 40px;
-  padding: 40px;
+  padding: 40px 0;
 }
 
 .entry-header {
@@ -188,14 +188,13 @@ p.entry-meta {
   background-color: $primary-color;
   color: #fff;
   display: inline-block;
-  margin: 0 -40px 0 0;
   padding: 5px 40px 5px 15px;
 }
 
 .entry-footer {
   background: $light-accent;
   padding: 20px 40px;
-  margin: 12px -40px -40px;
+  margin: 12px 0 -40px;
 }
 
 .entry-footer .entry-meta {

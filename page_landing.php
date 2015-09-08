@@ -2,7 +2,7 @@
 /**
  * This file adds the Landing template to the Nonprofit Pro Theme.
  *
- * @author StudioPress
+ * @author Logos Creative
  * @package Nonprofit Pro
  * @subpackage Customizations
  */

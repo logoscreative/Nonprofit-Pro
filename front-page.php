@@ -2,7 +2,7 @@
 /**
  * This file adds the Home Page to the Nonprofit Pro Theme.
  *
- * @author StudioPress
+ * @author Logos Creative
  * @package Nonprofit Pro
  * @subpackage Customizations
  */
@@ -25,6 +25,9 @@ function nonprofit_home_genesis_meta() {
 
 			//* Remove breadcrumbs
 			remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
+
+			//* Remove posts
+			remove_action( 'genesis_loop', 'genesis_do_loop' );
 
 			//* Add home top widgets
 			add_action( 'genesis_before_loop', 'nonprofit_home_top_widgets' );
