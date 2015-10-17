@@ -18,7 +18,16 @@ function nonprofit_home_genesis_meta() {
 
 	if( $paged < 1 ) {
 
-		if ( is_active_sidebar( 'home-featured' ) || is_active_sidebar( 'home-top' ) || is_active_sidebar( 'home-middle' ) ) {
+		if ( is_active_sidebar( 'home-sidebar' ) ) {
+
+			remove_action( 'genesis_sidebar', 'ss_do_sidebar' );
+
+			//* Add home sidebar widgets
+			add_action( 'genesis_sidebar', 'nonprofit_home_sidebar_widgets', 9 );
+
+		}
+
+		if ( is_active_sidebar( 'home-featured' ) || is_active_sidebar( 'home-middle' ) ) {
 
 			//* Add nonprofit-pro-home body class
 			add_filter( 'body_class', 'nonprofit_body_class' );
@@ -52,21 +61,25 @@ function nonprofit_body_class( $classes ) {
 
 }
 
+function nonprofit_home_sidebar_widgets() {
+
+	genesis_widget_area( 'home-sidebar', array(
+		'before' => '<div class="home-sidebar widget-area">',
+		'after'  => '</div>'
+	) );
+
+}
+
 function nonprofit_home_top_widgets() {
 
 	genesis_widget_area( 'home-featured', array(
 		'before' => '<div class="home-featured widget-area">',
-		'after'  => '</div>',
-	) );
-
-	genesis_widget_area( 'home-top', array(
-		'before' => '<div class="home-top widget-area"><div class="wrap">',
-		'after'  => '</div></div>',
+		'after'  => '</div>'
 	) );
 
 	genesis_widget_area( 'home-middle', array(
 		'before' => '<div class="home-middle widget-area"><div class="wrap">',
-		'after'  => '</div></div>',
+		'after'  => '</div></div>'
 	) );
 
 }
@@ -75,7 +88,7 @@ function nonprofit_home_bottom_widgets() {
 
 	genesis_widget_area( 'home-bottom', array(
 		'before' => '<div class="home-bottom widget-area"><div class="wrap">',
-		'after'  => '</div></div>',
+		'after'  => '</div></div>'
 	) );
 
 }

@@ -136,12 +136,27 @@ Media Queries
     font-size: 30px;
   }
 
+  .sidebar .widget,
   .home-middle .widget {
-    width: 50%;
+    width: 48%;
+
+    &:nth-of-type(odd) {
+      margin-right: 2%;
+      clear: both;
+    }
+
+    &:nth-of-type(even) {
+      clear: none;
+      margin-right: 0;
+    }
+
+    .widget-wrap .widget-title {
+      font-size: 24px;
+    }
   }
 
-  .home-middle .widget:nth-of-type(2n+1) {
-    clear: both;
+  .sidebar .widget {
+    float: left;
   }
 
   .home-bottom .enews p {
@@ -176,8 +191,8 @@ Media Queries
 
   .site-inner,
   .wrap {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
   .nonprofit-pro-landing .site-inner,
@@ -331,10 +346,6 @@ Media Queries
     font-size: 24px;
   }
 
-  .home-middle .widget {
-    width: 100%;
-  }
-
   .home-bottom,
   .home-middle {
     padding: 40px 0;
@@ -387,6 +398,18 @@ Media Queries
 }
 
 @media only screen and (max-width: 480px) {
+
+  .content .wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .sidebar .widget,
+  .home-middle .widget {
+    width: 100%;
+    margin-right: 0;
+    clear: both;
+  }
 
   .footer-widgets-2,
   .footer-widgets-3,
