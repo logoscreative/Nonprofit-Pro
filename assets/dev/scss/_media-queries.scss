@@ -16,8 +16,18 @@ Media Queries
   }
 
   .content,
-  .site-header .widget-area {
+  .site-header .widget-area,
+  .site-header .nav-primary {
     width: 620px;
+  }
+
+  .header-image .title-area {
+    max-width: calc( 100% - 620px );
+    padding-right: 10px;
+
+    a {
+      background-size: contain !important;
+    }
   }
 
   .sidebar-content-sidebar .content,
@@ -71,35 +81,30 @@ Media Queries
     width: 100%;
   }
 
-  .title-area {
+  .header-image .title-area {
     position: relative;
     margin-bottom: 6px;
+    max-width: none;
+    width: 25%;
+    height: 100%;
+
+    .site-title {
+      height: 100%;
+
+      a {
+        background-position: center top !important;
+        background-size: contain !important;
+      }
+    }
   }
 
-  .header-image .site-title a {
-    background-position: center top !important;
-    background-size: contain !important;
+  .site-header .nav-primary {
+    max-width: 75%;
   }
 
-  .genesis-nav-menu li,
-  .site-header ul.genesis-nav-menu,
-  .site-header .search-form {
-    float: none;
-  }
-
-  .footer-widgets,
-  .genesis-nav-menu,
-  .site-header .widget-area,
-  .home-bottom,
-  .site-description,
-  .site-header .search-form,
-  .site-header .title-area,
-  .site-title {
-    text-align: center;
-  }
-
-  .site-header .search-form {
-    margin: 16px auto;
+  .site-header ul.genesis-nav-menu {
+    float: right;
+    text-align: right;
   }
 
   .genesis-nav-menu li.right {
@@ -107,7 +112,8 @@ Media Queries
   }
 
   .site-header .genesis-nav-menu a {
-    padding: 16px;
+    padding: 10px;
+    font-size: 14px;
   }
 
   .nonprofit-pro-home .slide-excerpt {
@@ -236,13 +242,43 @@ Media Queries
     width: 100%;
   }
 
+  .header-image .title-area,
+  .site-header .nav-primary {
+    width: 100%;
+    max-width: none;
+  }
+
+  .menu {
+
+    li a {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+
+  .widget.widget_search {
+    clear: both;
+
+    .search-form {
+      float: none;
+
+      input {
+        padding: 10px;
+      }
+    }
+  }
+
   .genesis-nav-menu.responsive-menu > .menu-item > .sub-menu,
   .genesis-nav-menu.responsive-menu {
     display: none;
   }
 
+  .genesis-nav-menu.responsive-menu .menu-item {
+    text-transform: left;
+  }
+
   .genesis-nav-menu.responsive-menu .menu-item,
-  .responsive-menu-icon {
+  .responsive-menu-toggle {
     display: block;
   }
 

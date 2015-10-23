@@ -11,45 +11,13 @@ Content Area
   z-index: 9;
 
   .widget {
-    padding-top: 40px;
     margin: 0 auto;
     max-width: 1600px;
 
     &:last-of-type {
-      padding-bottom: 80px;
+      padding-bottom: 40px;
     }
   }
-}
-
-.home-top {
-  background-color: #fff;
-  text-align: center;
-
-  .wrap {
-    padding: 80px;
-    position: relative;
-    z-index: 99;
-  }
-
-  .widget_text {
-    color: $menu-bg-hover;
-    font-size: 48px;
-    line-height: 1.1;
-    text-align: center;
-
-    .widget-title {
-      color: $primary-color;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-  }
-}
-
-.home-featured + .home-top .wrap {
-  background-color: #fff;
-  border-radius: 3px;
-  border-top: 3px solid $primary-color;
-  margin-top: -40px;
 }
 
 .home-middle {

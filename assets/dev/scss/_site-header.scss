@@ -28,6 +28,9 @@ Site Header
 .header-image .title-area {
   background-color: #fff !important;
   padding: 0;
+  width: 400px;
+  height: 70px;
+  margin-top: 20px;
 }
 
 .site-title {
@@ -45,6 +48,7 @@ Site Header
 .header-image .site-title > a {
   float: left;
   width: 100%;
+  height: 100%;
 }
 
 .site-description {
@@ -64,10 +68,14 @@ Site Header
   text-indent: -9999px;
 }
 
+.header-image .site-title {
+  height: 70px;
+}
+
 /* Widget Area
 --------------------------------------------- */
 
-.site-header .widget-area {
+.site-header .nav-primary {
   float: right;
   text-align: right;
   width: 740px;

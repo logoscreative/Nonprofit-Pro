@@ -64,18 +64,52 @@ add_theme_support( 'genesis-style-selector', array(
 ) );
 
 //* Add support for 5-column footer widgets
-add_theme_support( 'genesis-footer-widgets', 5 );
+add_theme_support( 'genesis-footer-widgets', 3 );
 
 //* Add support for after entry widget
 add_theme_support( 'genesis-after-entry-widget-area' );
 
 //* Reposition the primary navigation menu
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
-add_action( 'genesis_before_header', 'genesis_do_nav' );
+add_action( 'genesis_header', 'genesis_do_nav' );
+
+//* Add description to primary navigation
+add_filter( 'walker_nav_menu_start_el', 'nonprofit_add_nav_descriptions', 10, 4 );
+function nonprofit_add_nav_descriptions( $item_output, $item, $depth, $args ) {
+
+	if ( $args->theme_location !== 'primary' ) {
+		return $item_output;
+	}
+
+	$description = __( $item->post_content );
+
+	$item_output = str_replace(
+		'</span>',
+		'</span>' . ' <span class="nav-desc"><small>' . $description . '</small></span>',
+		$item_output
+	);
+
+	return $item_output;
+}
+
+function nonprofit_nav_description() {
+
+
+
+}
 
 //* Reposition the secondary navigation menu
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_footer', 'genesis_do_subnav', 7 );
+add_action( 'genesis_header', 'nonprofit_top_menu_widgets', 9 );
+function nonprofit_top_menu_widgets() {
+
+	genesis_widget_area( 'top-menu', array(
+		'before' => '<div class="top-menu widget-area">',
+		'after'  => '</div>'
+	) );
+
+}
 
 //* Reposition the sidebar
 //remove_action( 'genesis_after_content', 'genesis_get_sidebar' );
@@ -117,15 +151,16 @@ function nonprofit_remove_comment_form_allowed_tags( $defaults ) {
 }
 
 //* Register widget areas
+unregister_sidebar( 'header-right' );
+genesis_register_sidebar( array(
+	'id'          => 'top-menu',
+	'name'        => __( 'Top Menu', 'nonprofit' ),
+	'description' => __( 'This is the top right area of all pages.', 'nonprofit' ),
+) );
 genesis_register_sidebar( array(
 	'id'          => 'home-featured',
 	'name'        => __( 'Home - Featured', 'nonprofit' ),
 	'description' => __( 'This is the featured section of the Home page.', 'nonprofit' ),
-) );
-genesis_register_sidebar( array(
-	'id'          => 'home-top',
-	'name'        => __( 'Home - Top', 'nonprofit' ),
-	'description' => __( 'This is the top section of the Home page.', 'nonprofit' ),
 ) );
 genesis_register_sidebar( array(
 	'id'          => 'home-middle',
@@ -136,4 +171,9 @@ genesis_register_sidebar( array(
 	'id'          => 'home-bottom',
 	'name'        => __( 'Home - Bottom', 'nonprofit' ),
 	'description' => __( 'This is the bottom section of the Home page.', 'nonprofit' ),
+) );
+genesis_register_sidebar( array(
+	'id'          => 'home-sidebar',
+	'name'        => __( 'Home - Sidebar', 'nonprofit' ),
+	'description' => __( 'This is the sidebar section of the Home page.', 'nonprofit' ),
 ) );

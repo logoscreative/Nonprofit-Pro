@@ -1,8 +1,8 @@
 jQuery(function( $ ){
 
-	$("header .genesis-nav-menu, .nav-primary .genesis-nav-menu").addClass("responsive-menu").before('<div class="responsive-menu-icon"></div>');
+	$("header .genesis-nav-menu, .nav-primary .genesis-nav-menu").addClass("responsive-menu").before('<button class="responsive-menu-toggle"><span class="dashicons dashicons-menu"></span> Menu</button>');
 
-	$(".responsive-menu-icon").click(function(){
+	$(".responsive-menu-toggle").click(function(){
 		$(this).next("header .genesis-nav-menu, .nav-primary .genesis-nav-menu").slideToggle();
 	});
 
