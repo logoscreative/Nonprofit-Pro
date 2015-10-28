@@ -152,6 +152,46 @@ Site Navigation
     font-size: 14px;
     color: $dark-accent;
   }
+
+  .sub-menu-columns ul.sub-menu {
+    background-color: #27221a;
+    width: 410px;
+
+    a {
+      box-shadow: none;
+    }
+
+    li {
+      display: inline-block;
+      float: left;
+      width: 200px;
+
+      &:nth-child(odd) {
+        float: left;
+        margin-right: 10px;
+
+        .sub-menu {
+          margin: -43px 0 0 -149px;
+        }
+      }
+
+      &:nth-child(even) {
+        float: right;
+      }
+
+      .sub-menu {
+        width: 150px;
+
+        li {
+          float: left;
+
+          a {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .widget-area.top-menu {
@@ -202,6 +242,7 @@ Site Navigation
 --------------------------------------------- */
 
 .responsive-menu-toggle {
+  display: none;
   cursor: pointer;
   text-align: center;
   margin: 10px auto;
