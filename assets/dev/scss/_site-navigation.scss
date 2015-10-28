@@ -181,6 +181,8 @@ Site Navigation
 
       .sub-menu {
         width: 150px;
+        visibility: hidden;
+        transition: 0.2s 1s;
 
         li {
           float: left;
@@ -189,6 +191,11 @@ Site Navigation
             width: 150px;
           }
         }
+      }
+
+      &:hover .sub-menu {
+        visibility: visible;
+        transition-delay: 0s;
       }
     }
   }
