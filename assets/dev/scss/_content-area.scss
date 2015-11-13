@@ -95,6 +95,11 @@ Content Area
 
 .entry-content {
 
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
   ol,
   ul {
     margin-bottom: 28px;
@@ -169,6 +174,25 @@ p.entry-meta {
   padding: 10px;
   margin-bottom: 10px;
   background: $light-accent;
+
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .links {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 }
 
 /* After Entry

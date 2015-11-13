@@ -92,12 +92,6 @@ function nonprofit_add_nav_descriptions( $item_output, $item, $depth, $args ) {
 	return $item_output;
 }
 
-function nonprofit_nav_description() {
-
-
-
-}
-
 //* Reposition the secondary navigation menu
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_footer', 'genesis_do_subnav', 7 );
