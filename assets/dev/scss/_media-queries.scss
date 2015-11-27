@@ -261,10 +261,6 @@ Media Queries
 
     .search-form {
       float: none;
-
-      input {
-        padding: 10px;
-      }
     }
   }
 
@@ -331,6 +327,20 @@ Media Queries
     transition:         opacity .4s ease-in-out;
     width: 100%;
     z-index: 99;
+  }
+
+  .nav-primary .genesis-nav-menu .sub-menu-columns ul.sub-menu {
+    width: 100%;
+    overflow: auto;
+    background: none;
+
+    li {
+      width: 48%;
+
+      .sub-menu {
+        display: none;
+      }
+    }
   }
 
   .genesis-nav-menu.responsive-menu .sub-menu .sub-menu {
