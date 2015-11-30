@@ -36,11 +36,11 @@ $event_id = get_the_ID();
 		<h2>
 			<?php echo tribe_events_event_schedule_details( $event_id ); ?>
 			<?php if ( tribe_get_cost() ) : ?>
-				<?php if ( tribe_get_event_meta( $event_id, '_EventCost', false )[0] ) : ?>
-					| <?php echo tribe_get_event_meta( $event_id, '_EventCost', false )[0]; ?>
+				<?php if ( tribe_get_event_meta( $event_id, '_EventCost', false ) ) : ?>
+					| <?php $customcost = tribe_get_event_meta( $event_id, '_EventCost', false ); echo $customcost[0]; ?>
 				<?php else : ?>
-					| <?php echo tribe_get_cost() ?>
-				<?php endif; ?>
+				| <?php echo tribe_get_cost() ?>
+			<?php endif; ?>
 			<?php endif; ?>
 		</h2>
 	</div>
