@@ -39,8 +39,11 @@ $event_id = get_the_ID();
 				<?php if ( tribe_get_event_meta( $event_id, '_EventCost', false ) ) : ?>
 					| <?php $customcost = tribe_get_event_meta( $event_id, '_EventCost', false ); echo $customcost[0]; ?>
 				<?php else : ?>
-				| <?php echo tribe_get_cost() ?>
+					| <?php echo tribe_get_cost() ?>
+				<?php endif; ?>
 			<?php endif; ?>
+			<?php if ( tribe_get_venue() ) : ?>
+				| <?php echo tribe_get_venue() ?>
 			<?php endif; ?>
 		</h2>
 	</div>
