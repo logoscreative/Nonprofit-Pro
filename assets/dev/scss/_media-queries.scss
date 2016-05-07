@@ -445,9 +445,24 @@ Media Queries
 
 @media only screen and (max-width: 480px) {
 
+  .site-header .wrap,
   .content .wrap {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .nonprofit-pro-home .home-featured .widget.soliloquy {
+    padding-bottom: 0;
+  }
+
+  .home-middle {
+    padding-top: 20px;
+
+    .widget .widget-wrap .full-width img {
+      width: 40%;
+      float: left;
+      margin: 0 10px 10px 0;
+    }
   }
 
   .sidebar .widget,
