@@ -171,3 +171,35 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Home - Sidebar', 'nonprofit' ),
 	'description' => __( 'This is the sidebar section of the Home page.', 'nonprofit' ),
 ) );
+
+//* Modify breadcrumb arguments.
+add_filter( 'genesis_breadcrumb_args', 'nonprofit_breadcrumb_args' );
+
+function nonprofit_breadcrumb_args( $args ) {
+
+	$args['labels']['prefix'] = '';
+	return $args;
+
+}
+
+//* Conditionally Use Custom Author
+
+add_filter( 'the_author', 'nonprofit_filter_author' );
+
+function nonprofit_filter_author($author) {
+
+	$customauthor = get_post_meta( get_the_ID(), 'customauthor', true );
+
+	if ( $customauthor ) {
+
+		$author = 'By ' . $customauthor;
+
+	} else {
+
+		$author = '';
+
+	}
+
+	return $author;
+
+}

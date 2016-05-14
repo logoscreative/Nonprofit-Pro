@@ -35,6 +35,7 @@ module.exports = function(grunt) {
             },
             build: {
                 src: [
+                    'node_modules/jquery-match-height/jquery.matchHeight.js',
                     'assets/dev/js/main.js'
                 ],
                 dest: 'assets/dist/js/scripts.min.js'

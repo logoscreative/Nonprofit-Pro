@@ -23,3 +23,12 @@ Sidebars
 .sidebar .widget:last-of-type {
   margin-bottom: 40px;
 }
+
+.simple-social-icons ul {
+  display: flex;
+  justify-content: space-around;
+
+  li:first-child {
+    margin-left: 0 !important;
+  }
+}

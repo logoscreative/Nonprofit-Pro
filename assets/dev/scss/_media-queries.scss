@@ -18,16 +18,20 @@ Media Queries
   .content,
   .site-header .widget-area,
   .site-header .nav-primary {
-    width: 620px;
+    width: 640px;
   }
 
   .header-image .title-area {
-    max-width: calc( 100% - 620px );
-    padding-right: 10px;
+    max-width: calc( 100% - 640px );
+    padding-right: 20px;
 
     a {
       background-size: contain !important;
     }
+  }
+
+  .site-header ul.genesis-nav-menu li {
+    float: left;
   }
 
   .sidebar-content-sidebar .content,
@@ -261,6 +265,23 @@ Media Queries
 
     .search-form {
       float: none;
+    }
+  }
+
+  .widget-area.top-menu {
+
+    .search-form input {
+      font-size: 12px;
+      padding: 7px;
+    }
+
+    .widget_nav_menu {
+      float: none;
+
+      .menu {
+        display: flex;
+        justify-content: space-around;
+      }
     }
   }
 

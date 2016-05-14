@@ -129,22 +129,34 @@ Content Area
 
 p.entry-meta {
   font-size: 14px;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
 }
 
 .content p.entry-meta {
   margin-bottom: 0;
-  text-align: right;
 }
 
 .content .entry-header .entry-meta {
-  margin: -10px 0 10px;
+  margin-bottom: 10px;
 }
 
 .content .entry-header .entry-meta .entry-time {
   background-color: $primary-color;
   color: #fff;
+  float: right;
   display: inline-block;
   padding: 5px 40px 5px 15px;
+  margin-top: -45px;
 }
 
 .entry-footer {

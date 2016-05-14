@@ -21,4 +21,6 @@ jQuery(function( $ ){
 		});
 	});
 
+  $('.quarter-box').matchHeight();
+
 });
