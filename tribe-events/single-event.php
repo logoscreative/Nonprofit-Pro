@@ -34,31 +34,30 @@ $event_id = get_the_ID();
 
 	<div class="updated published tribe-clearfix">
 		<h2>
-			<?php echo tribe_events_event_schedule_details( $event_id ); ?>
+			<?php
+			$customsched = get_post_meta(get_the_ID(), 'customsched', true);
+			$eventrecurrence = get_post_meta(get_the_ID(), '_EventRecurrence', true);
+			$eventrecurrence = $eventrecurrence['recurrence-description'];
+
+			if ( !$customsched && !$eventrecurrence ) { ?>
+				<?php echo tribe_events_event_schedule_details(); ?>
+			<?php } ?>
+			<?php
+			if ( tribe_is_recurring_event() && !$customsched && !$eventrecurrence ) { ?>
+				| <?php echo tribe_get_recurrence_text(); ?>
+			<?php } elseif ( tribe_is_recurring_event() && ( $customsched != '' || $eventrecurrence != '' ) ) { ?>
+				<?php echo $customsched;
+				echo $eventrecurrence; ?>
+			<?php } ?>
 			<?php if ( tribe_get_cost() ) : ?>
-				<?php if ( tribe_get_event_meta( $event_id, '_EventCost', false ) ) : ?>
-					| <?php $customcost = tribe_get_event_meta( $event_id, '_EventCost', false ); echo $customcost[0]; ?>
-				<?php else : ?>
-					| <?php echo tribe_get_cost() ?>
-				<?php endif; ?>
+				| <?php echo tribe_get_cost() ?>
 			<?php endif; ?>
 			<?php if ( tribe_get_venue() ) : ?>
 				| <?php echo tribe_get_venue() ?>
 			<?php endif; ?>
+
 		</h2>
 	</div>
-
-	<!-- Event header -->
-	<div id="tribe-events-header" <?php tribe_events_the_header_attributes() ?>>
-		<!-- Navigation -->
-		<h3 class="tribe-events-visuallyhidden"><?php printf( __( '%s Navigation', 'the-events-calendar' ), $events_label_singular ); ?></h3>
-		<ul class="tribe-events-sub-nav">
-			<li class="tribe-events-nav-previous"><?php tribe_the_prev_event_link( '<span>&laquo;</span> %title%' ) ?></li>
-			<li class="tribe-events-nav-next"><?php tribe_the_next_event_link( '%title% <span>&raquo;</span>' ) ?></li>
-		</ul>
-		<!-- .tribe-events-sub-nav -->
-	</div>
-	<!-- #tribe-events-header -->
 
 	<?php while ( have_posts() ) :  the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

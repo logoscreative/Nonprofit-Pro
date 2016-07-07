@@ -86,7 +86,7 @@ Content Area
 .entry {
   background-color: #fff;
   margin-bottom: 40px;
-  padding: 40px 0;
+  padding: 20px 0 0;
 }
 
 .entry-header {
@@ -150,16 +150,8 @@ p.entry-meta {
   margin-bottom: 10px;
 }
 
-.content .entry-header .entry-meta .entry-time {
-  background-color: $primary-color;
-  color: #fff;
-  float: right;
-  display: inline-block;
-  padding: 5px 40px 5px 15px;
-  margin-top: -45px;
-}
-
 .entry-footer {
+  display: none;
   background: $light-accent;
   padding: 20px 40px;
   margin: 12px 0 -40px;

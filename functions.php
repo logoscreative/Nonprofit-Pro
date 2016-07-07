@@ -19,6 +19,9 @@ add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list'
 //* Add viewport meta tag for mobile browsers
 add_theme_support( 'genesis-responsive-viewport' );
 
+//* Disable responsive images
+add_filter( 'max_srcset_image_width', create_function( '', 'return 1;' ) );
+
 //* Enqueue Scripts
 add_action( 'wp_enqueue_scripts', 'nonprofit_load_scripts' );
 function nonprofit_load_scripts() {
@@ -116,6 +119,15 @@ function nonprofit_post_info_filter($post_info) {
 	return $post_info;
 }
 
+//* Remove entry meta from non-posts
+add_action( 'genesis_entry_header', 'nonprofit_remove_post_meta' );
+function nonprofit_remove_post_meta() {
+	if ( get_post_type() !== 'post') {
+		remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+	}
+}
+
+
 //* Customize the entry meta in the entry footer
 add_filter( 'genesis_post_meta', 'nonprofit_post_meta_filter' );
 function nonprofit_post_meta_filter($post_meta) {
@@ -192,7 +204,7 @@ function nonprofit_filter_author($author) {
 
 	if ( $customauthor ) {
 
-		$author = 'By ' . $customauthor;
+		$author = 'By ' . $customauthor . ' | ';
 
 	} else {
 

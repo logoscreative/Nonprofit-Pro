@@ -11,6 +11,10 @@ Sidebars
   border-bottom: 1px dotted $medium-accent;
   margin-bottom: 10px;
   padding-bottom: 10px;
+
+  &.staff {
+    border-bottom: none;
+  }
 }
 
 .after-entry .widget,
@@ -31,4 +35,8 @@ Sidebars
   li:first-child {
     margin-left: 0 !important;
   }
+}
+
+.dashicons-before.button:before {
+  padding-right: 5px;
 }
